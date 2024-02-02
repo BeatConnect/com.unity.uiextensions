@@ -1931,6 +1931,9 @@ namespace UnityEditor.UI
 			Color selectedColor = new Color(0f, 0.455f, 0.894f);
 
 			var labels = new string[] { "This", "That", "Other" };
+			// BEATCONNECT MODIFICATION START
+			// This is causing an issue compiling, not sure why
+			/*
 			for (int i = 0; i < 3; i++)
 			{
 				var button = AddButtonAsChild(go).GetComponent<Button>();
@@ -1945,6 +1948,8 @@ namespace UnityEditor.UI
 				text.text = labels[i];
 				text.color = selectedColor;
 			}
+			*/
+			// BEATCONNECT MODIFICATION END
 
 			control.LayoutSegments();
 
